@@ -14,9 +14,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Bronnenlijst
-  1. -bron 1-
-  2. -bron 2-
-  3. -...-
+  1. [-bron 1-](https://matthewlein.com/tools/ceaser)
+  2. [-bron 2-](https://css-tricks.com/almanac/properties/t/transform/)
+  3. [-bron 3-](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+  4. [-bron 4-] Sanne
+
 
 
 
@@ -46,19 +48,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Je uitkomst - karakteristiek screenshot(s):
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/gevallenlogo.png" width="375px" alt="grappige uitkomst opdracht 1">
+  <img src="readme-images/vollogo.png" width="375px" alt="uitkomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatje(s)
+  Ik heb geleerd (en iets wat gelijk er goed ging!) om d.m.v. veel rekenen en goede timing een animatie later nog een extra animatie te geven. Dus dat er nog even een pauze tussen zit. Dit is bij de D het geval. Hij komt aantuffen, maar pas als de laatste streepjes in de D zijn gebotst, valt ie pas om! Het was even een kwestie van rekenen en trial and error, maar het is super goed gelukt!
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="top">
+  <img src="readme-images/topd.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatje(s)
+  Ik had de L echt willen laten vallen en omrollen. Dit is niet helemaal gelukt. Het is nu een rollende animatie. Dit ziet er ook goed uit, maar niet helemaal het idee wat ik had. Ik heb hier samen met Sanne mee gezeten, maar dit bleek toch wel heel moeilijk. Uiteindelijk zijn we hier op uitgekomen
 
-  <img src="readme-images/dummy-plaatje.svg" width="375px" alt="bummer">
+  <img src="readme-images/lastigel.png" width="375px" alt="bummer">
 </details>
 
 
