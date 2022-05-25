@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** Nienke
+**Auteur:** Nienke de Keijzer
 
 **De opdrachten:** [opdracht 1](opdracht1/index.html) en [opdracht 2](opdracht2/index.html)
 
@@ -18,6 +18,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. [-bron 2-](https://css-tricks.com/almanac/properties/t/transform/)
   3. [-bron 3-](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
   4. [-bron 4-] Sanne
+  5. [-bron 5-] (https://css-tricks.com/a-complete-guide-to-custom-properties/)
 
 
 
