@@ -4,12 +4,10 @@
 /* FONTS */
 /*********/
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
+	font-family: 'Raleway', sans-serif;
+	src: url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap') format('woff2');
 	font-weight: normal;
 	font-style: normal;
-
 }
 
 
@@ -36,8 +34,16 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:red;
+	--color-background: gold;
+	--color-image: repeating-linear-gradient(red 0% 20%, transparent 20% 40%);
+	--text-skew: skewX(-20deg);
+}
+
+:root.dark-mode { 
+	--color-text:#ED1C24; 
+	--color-background: #D4AF37; 
+	--color-image: repeating-linear-gradient(#ED1C24 0% 20%, transparent 20% 40%);
 }
 
 
@@ -48,10 +54,320 @@ button, summary {
 /* JOUW STYLING */
 /****************/
 body {
-  font-family:eenfont, sans-serif;
-  color:var(--color-text);
+	font-family: 'Raleway', sans-serif;  
+	color:var(--color-text);
   background-color:var(--color-background);
 }
 
 /* jouw code */
 
+
+h1 {
+	max-width: 15em;
+	height: 8em;
+ 	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+/* Streepjes voor het woord */
+
+
+h1::before {
+	position: absolute;
+	left: 5.6em;
+	top: 4.05em;
+	content: "";
+	width: .8em;
+	height: .3em;
+	background-image: var(--color-image);
+	transform: var(--text-skew);
+	animation-name: aanscheurenBefore;
+	animation-duration: 3s;
+	animation-delay: 11s;
+	animation-fill-mode: both;
+	transform-origin: bottom right;
+}
+
+@keyframes aanscheurenBefore {
+	0% {
+		transform: translateX(-20em);
+		animation-timing-function: linear;
+	}
+
+	19% {
+		transform: translateX(.2em);
+	}
+
+	20% {
+		transform: translateX(.2em) scale(.75, 1.5);
+	}
+	
+	30% {
+		transform: translateX(0);
+	}
+
+	75% {
+		transform: translateX(0) scale(1.3, 0.4);
+	}
+
+	90% {
+		transform: translateX(0)  scale(1.3, 0.4);
+	}
+
+	100% {
+		transform: translateX(-.15em) skew(-20deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Letter D */
+
+
+span:first-of-type {
+	transform: var(--text-skew);
+	animation-name: tuffenD;
+	animation-duration: 4.5s;
+	animation-delay: 9s;
+	animation-fill-mode: both;
+	transform-origin: bottom right;
+	/* visibility: hidden; */
+
+}
+
+@keyframes tuffenD {
+  0%{
+    transform: translateY(0) translateX(-10em);
+  }
+
+  10%{
+    transform: translateY(-.2em) translateX(-3em);
+  }
+
+  20%{
+    transform: translateY(0) translateX(-2em);
+  }
+
+  30%{
+    transform: translateY(-.2em) translateX(-1em);
+  }
+ 
+	40%{
+    transform: translateY(0) translateX(-.35em) translateX(0em);
+  }
+	
+	57%{
+    transform: translateX(-.35em) skew(0);
+  }
+  
+	59% {
+    transform: translateX(-.25em) skew(-24deg);
+	}
+
+  80%{
+    transform: translateX(-.25em) skew(-20deg);
+  }
+
+	100% {
+		transform: translateX(-.25em)  skew(-20deg);
+
+	}
+}
+
+
+
+
+
+
+
+/* Letter H */
+
+
+span:nth-of-type(2) {
+	transform: var(--text-skew);
+	animation-name: vallenH;
+	animation-duration: 4s;
+	animation-delay: 5s;
+	animation-fill-mode: both;
+}
+
+@keyframes vallenH {
+	0% {
+		transform: translateY(-10em);
+		animation-timing-function: cubic-bezier(.44,0,.89,.17);
+	}
+
+	50% {
+		transform: translateY(0) rotate(-.25turn) ;
+		animation-timing-function: cubic-bezier(.18,.9,.45,1);
+	}
+
+	70% {
+		transform: translateY(-2em) rotate(.5turn);
+		animation-timing-function: cubic-bezier(.44,0,.89,.17);
+
+	}
+
+	80%{
+		transform: translateY(0em);
+	}
+
+	85%{
+		transform: translateY(-.5em);
+		animation-timing-function:  cubic-bezier(0.895, 0.030, 0.685, 0.220);
+	}
+
+	90% {
+		transform: translateY(0em);
+		animation-timing-function: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+	}
+
+	92.5% {
+		transform: translateY(-.2em) skewX(-5deg);
+	}
+
+	95%{
+		transform: translateY(0em) skewX(-10deg);
+	}
+
+	97.5%{
+		transform: translateY(-.25em) skewX(-15deg);
+	}
+
+
+	100% {
+		transform: translateY(0) skewX(-20deg);
+
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Letter L */
+
+
+span:nth-of-type(3) {
+	transform: var(--text-skew);
+	animation-name: rollenL;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+}
+
+@keyframes rollenL {
+	0% {
+		transform: translateX(-10em) translatey(0em) rotate(0turn);
+	}
+
+	25% {
+		transform: translateX(-7.5em) translatey(-.5em) rotate(.25turn);
+		transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+	}
+
+	50% {
+		transform: translateX(-5em) rotate(.5turn);
+		transition-timing-function: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+	}
+
+	75% {
+		transform: translateX(-2.5em) translatey(-.5em) rotate(.75turn) skewX(0deg);
+	}
+
+	100% {
+		transform: translateX(0) rotate(1turn) skewX(-20deg);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Streepjes na de letters */
+
+h1::after {
+	position: absolute;
+	right: 5.7em;
+	top: 4.05em;
+	content: "";
+	width: .8em;
+	height: .3em;
+	background-image: var(--color-image);
+	transform: var(--text-skew);
+	animation-name: aanscheurenAfter;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	transform-origin: right bottom;
+}
+
+@keyframes aanscheurenAfter {
+	0% {
+		transform: translateX(-20em);
+		animation-timing-function: linear;
+	}
+
+	74% {
+		transform: translateX(1em);
+	}
+
+	75% {
+		transform: translateX(1em) scale(.75, 1.5);
+	}
+
+	100% {
+		transform: translateX(0) skewX(-20deg);
+	}
+}
